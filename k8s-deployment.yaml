@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: backend
+  name: chatbot-be
   namespace: chatbot
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: backend
+      app: chatbot-be
   template:
     metadata:
       labels:
-        app: backend
+        app: chatbot-be
     spec:
       containers:
-      - name: backend
+      - name: chatbot-be
         image: kwonjh0406/chatbot-be:IMAGE_TAG
         ports:
         - containerPort: 8080

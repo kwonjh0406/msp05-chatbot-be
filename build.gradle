@@ -10,7 +10,7 @@ description = 'Demo project for Spring Boot'
 
 // Toolchain removed to use system default
 java {
-    sourceCompatibility = '17'
+    sourceCompatibility = '21'
 }
 
 configurations {
